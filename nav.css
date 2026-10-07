@@ -120,8 +120,14 @@
   content: none;
 }
 
+/* Syllabus and Contact: the same space above them as between
+   the course text and the projects */
+.site-nav .projects > .project:last-child {
+  margin-bottom: 0;
+}
+
 .site-nav .nav-links {
-  margin-top: 0;
+  margin-top: calc(24px + 1lh);
 }
 
 /* Narrower screens, down to phone size: the index stays on the left
