@@ -14,7 +14,7 @@ const siteNav = `
   <button class="nav-toggle" type="button" aria-expanded="false">Index +</button>
 
   <div class="site-intro">
-    <p>This is the class site for JavaScript, Fall 2026. Below you'll find every project prompt and the code examples we went through in class.</p>
+    <p>This is the class site for JavaScript, Fall 2026. Below you'll find every project prompt and the <a href="https://github.com/severinbunse/Javascript-2026-examples" target="_blank" rel="noopener">code examples</a> we went through in class.</p>
   </div>
 
   <ul class="projects">
