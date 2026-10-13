@@ -1,13 +1,25 @@
-function addDot(event) {
+function addStar(event) {
+    const mouseX = event.pageX;
+    const mouseY = event.pageY;
+
     const randomColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+    const randomRotation = Math.random() * 360;
 
-    const dot = document.createElement('div');
-    dot.className = 'dot';
-    dot.style.backgroundColor = randomColor;
-    dot.style.left = `${event.pageX - 12.5}px`; // pageX/pageY include the scroll, so dots stay put when the page scrolls. The dots are 25px, so -12.5px centers them on the cursor.
-    dot.style.top = `${event.pageY - 12.5}px`;
+    const star = document.createElement('div');
+    star.textContent = '★';
+    star.style.fontSize = '25px';
+    star.style.lineHeight = '1';
+    star.style.color = randomColor;
+    star.style.position = 'absolute';
+    star.style.left = `${mouseX}px`; // pageX and pageY include the scroll, so the stars stay in place when the page scrolls. clientX and clientY would put them in the wrong spot.
+    star.style.top = `${mouseY}px`;
+    star.style.transform = `translate(-50%, -50%) rotate(${randomRotation}deg)`; // translate moves the star back by half its size so it's centered on the cursor, rotate spins it.
+    star.style.pointerEvents = 'none'; // lets clicks go through the star to the links underneath.
+    star.style.userSelect = 'none'; // stops the star from being selected (the blue box) when you click fast.
+    star.style.webkitUserSelect = 'none'; // the same for Safari.
 
-    document.body.append(dot);
+    document.body.append(star);
+
 }
 
-document.addEventListener('click', addDot);
+document.addEventListener('click', addStar);

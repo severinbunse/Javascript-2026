@@ -250,11 +250,3 @@ details:not(:has(.activity)) > summary::after {
     transition: none;
   }
 }
-
-.dot {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  pointer-events: none;
-}
