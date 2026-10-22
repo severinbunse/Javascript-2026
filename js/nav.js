@@ -35,7 +35,7 @@ const siteNav = `
       </details>
     </li>
 
-    <li class="project" data-status="current">
+    <li class="project" data-status="done">
       <details open>
         <summary><a class="project-title" href="Project3_10.22.26.html">Project 3: Garden</a></summary>
         <ul class="activities">
@@ -44,6 +44,12 @@ const siteNav = `
           <li class="activity same-date"><a href="${code}2026-10-01-event-listeners/event-types-overview">Event Types Overview</a></li>
           <li class="activity same-date"><a href="${code}2026-10-01-event-listeners/lightswitch-event-listener">Lightswitch Event Listener</a></li>
         </ul>
+      </details>
+    </li>
+
+    <li class="project" data-status="current">
+      <details open>
+        <summary><a class="project-title" href="Project4_11.12.26.html">Project 4: Sender Receiver</a></summary>
       </details>
     </li>
   </ul>
