@@ -37,6 +37,21 @@ p {
   margin: 0 0 16px;
 }
 
+h2 {
+  font-size: 16px;
+  margin: 1lh 0 4px;
+}
+
+.link-list {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.link-list li {
+  margin-bottom: 4px;
+}
+
 .hello-world p {
   margin-bottom: 8px;
 }

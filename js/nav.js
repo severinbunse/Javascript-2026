@@ -60,6 +60,7 @@ const siteNav = `
 
   <ul class="nav-links">
     <li><a href="${slides}">Slides</a></li>
+    <li><a href="APIs.html">List of APIs</a></li>
     <li><a href="syllabus.pdf">Syllabus</a></li>
     <li><a href="mailto:bunses@newschool.edu">Contact</a></li>
   </ul>
