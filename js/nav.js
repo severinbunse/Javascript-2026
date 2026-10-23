@@ -51,6 +51,9 @@ const siteNav = `
     <li class="project" data-status="current">
       <details open>
         <summary><a class="project-title" href="Project4_11.12.26.html">Project 4: Sender Receiver</a></summary>
+        <ul class="activities">
+          <li class="activity"><time datetime="2026-10-22">10/22</time><a href="${code}2026-10-22-fetch/iss-tracker">ISS Tracker</a></li>
+        </ul>
       </details>
     </li>
   </ul>
