@@ -1,5 +1,6 @@
 const examples = 'https://github.com/severinbunse/Javascript-2026-examples';
 const code = examples + '/tree/main/';
+const slides = 'https://docs.google.com/presentation/d/1b1YZO9iuZUoKTY5dyJro_OC3UeKOn3ExHNrq75O5Qhw/preview';
 
 const siteNav = `
 <nav id="index" class="site-nav">
@@ -7,7 +8,7 @@ const siteNav = `
   <button class="nav-toggle" type="button" aria-expanded="false">Index +</button>
 
   <div class="site-intro">
-    <p>This is the class site for JavaScript, Fall 2026. Below you'll find every project prompt and the <a href="${examples}">code examples</a> we went through in class.</p>
+    <p>This is the class site for JavaScript, Fall 2026. Below you'll find every project prompt, the <a href="${slides}">class slides</a> and the <a href="${examples}">code examples</a> we went through in class.</p>
   </div>
 
   <ul class="projects">
@@ -55,6 +56,7 @@ const siteNav = `
   </ul>
 
   <ul class="nav-links">
+    <li><a href="${slides}">Slides</a></li>
     <li><a href="syllabus.pdf">Syllabus</a></li>
     <li><a href="mailto:bunses@newschool.edu">Contact</a></li>
   </ul>
