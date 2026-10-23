@@ -13,7 +13,7 @@ const siteNav = `
 
   <ul class="projects">
     <li class="project" data-status="done">
-      <details open>
+      <details>
         <summary><a class="project-title" href="Project1_09.10.26.html">Project 1: Hello World</a></summary>
         <ul class="activities">
           <li class="activity"><a href="Homework_09.03.26.html">Homework: Hello World pt. 1</a></li>
@@ -23,7 +23,7 @@ const siteNav = `
     </li>
 
     <li class="project" data-status="done">
-      <details open>
+      <details>
         <summary><a class="project-title" href="Project2_10.01.26.html">Project 2: Generative Pattern</a></summary>
         <ul class="activities">
           <li class="activity"><time datetime="2026-09-10">9/10</time><a href="${code}2026-09-10-conditionals-loops-and-functions">Conditionals, Loops &amp; Functions</a></li>
@@ -37,7 +37,7 @@ const siteNav = `
     </li>
 
     <li class="project" data-status="done">
-      <details open>
+      <details>
         <summary><a class="project-title" href="Project3_10.22.26.html">Project 3: Garden</a></summary>
         <ul class="activities">
           <li class="activity"><time datetime="2026-10-01">10/1</time><a href="${code}2026-10-01-event-listeners/enzo-mari-homepage">Enzo Mari Homepage</a></li>
