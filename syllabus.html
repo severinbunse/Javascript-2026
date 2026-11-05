@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <title>Syllabus — JavaScript, Fall 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page h2,
+    .page h3 {
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: underline;
+      margin: 16px 0;
+    }
+    .project-header,
+    .week-header {
+      margin: 16px 0;
+    }
+    .project-header > *,
+    .week-header > * {
+      margin: 0;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid black;
+      margin: 24px 0;
+    }
+    /* Dashes line up with the left edge of the text */
+    .page ul {
+      padding-left: 1em;
+      list-style-type: "– ";
+    }
+    /* Project and week titles are bold */
+    .page .project-title,
+    .page .week-title {
+      font-weight: bold;
+      text-decoration: none;
+    }
+    /* A line between projects and between weeks */
+    #projects .project + .project,
+    .week + .week,
+    .week + .break,
+    .break + .week,
+    #schedule {
+      border-top: 1px solid black;
+      margin-top: 24px;
+      padding-top: 8px; /* plus the heading's 16px margin */
+    }
+    .break {
+      padding-bottom: 8px;
+    }
+    .page details {
+      margin-bottom: 16px;
+    }
+    .page details > summary::after {
+      content: " +";
+    }
+    .page details[open] > summary::after {
+      content: " \2013";
+    }
+    .meta-table {
+      border-collapse: collapse;
+    }
+    .meta-table td {
+      padding: 0 16px 4px 0;
+      vertical-align: top;
+    }
+  </style>
+  <script src="js/nav.js" defer></script>
+  <script src="js/dots.js" defer></script>
+</head>
+<body class="syllabus">
+
+<main id="content" class="page">
+
+  <header class="course-info">
+    <h1>PSAM 3210 — CD Studio: JavaScript</h1>
+    <table class="meta-table">
+      <tr><td>Semester</td><td>Fall 2026</td></tr>
+      <tr><td>Meeting</td><td>Thursdays, 4:00pm–6:40pm</td></tr>
+      <tr><td>Location</td><td>63 Fifth Ave, Room 622</td></tr>
+      <tr><td>Instructor</td><td>Severin Bunse</td></tr>
+      <tr><td>CRN</td><td>2158, Section A</td></tr>
+    </table>
+    <p><a href="syllabus.pdf" target="_blank" rel="noopener">Full syllabus with course policies (PDF)</a></p>
+  </header>
+
+  <hr>
+
+  <section id="projects">
+
+    <section class="project">
+      <header class="project-header">
+        <h2 class="project-title">Project 1: Hello World (<time datetime="2026-08-27">Aug 27</time> &ndash; <time datetime="2026-09-10">Sep 10</time>)</h2>
+      </header>
+      <p>Using your existing knowledge of HTML and CSS (and JavaScript, if you like), create a homepage that represents you in some way. It could introduce yourself, explore an interest or obsession, or give you a chance to realize an idea you've had. Think of it as making a place for yourself on the web.</p>
+      <p>This site will also be used to catalogue the projects for the rest of the semester, so it can keep developing as we continue.</p>
+      <p>For inspiration check out: <a href="https://geocities.restorativland.org">https://geocities.restorativland.org</a></p>
+      <p><em>You will learn:</em> HTML structure, CSS styling, Site navigation, Variables, functions and click events</p>
+      <details>
+        <summary>Part 1 — Relearning the web (Weeks 1–3)</summary>
+        <p>Students are re-introduced to basic HTML + CSS concepts and are asked to produce a simple "homepage" site to catalogue the projects for the rest of the semester. If students feel comfortable, they are given the opportunity to integrate JavaScript into their site. An emphasis is given on foundational web knowledge and clear code to provide a framework for more advanced work in the coming weeks.</p>
+      </details>
+    </section>
+
+    <section class="project">
+      <header class="project-header">
+        <h2 class="project-title">Project 2: Generative Pattern (<time datetime="2026-09-10">Sep 10</time> &ndash; <time datetime="2026-10-01">Oct 1</time>)</h2>
+      </header>
+      <p>You will write a JavaScript program which uses loops and if statements to create a modular generative pattern. You will design at least one single pattern unit (a module) (think: div) that changes over the course of its output.</p>
+      <p>Your unit should iterate at least 100 times. With each iteration, your unit should somehow modify itself (content or CSS attributes: size, color, rotation, shape, texture). Your pattern should have at least 2 variables of change (ex: content, color), is allowed to repeat itself (i.e. be a pattern), and is allowed to be as abstract or literal as you want (it can tell a story, or it can be an exercise in form). The goal of this project is to use JavaScript to dynamically append HTML elements and programmatically alter their attributes. This project will also utilize JavaScript to explore techniques of animation and interactivity.</p>
+      <p><em>You will learn:</em> Loops and arrays, Timing with setTimeout(), Randomness with Math.random(), Changing CSS with JavaScript</p>
+      <details>
+        <summary>Part 2 — JavaScript, iteration, and movement (Weeks 3–6)</summary>
+        <p>Students are introduced to programming concepts: data storage/structures, loops, and functions and explore their visual potential through the development of generative patterns, animations, and modular abstractions. Emphasis is given towards understanding data types, storing values, and manipulating CSS (units and classes) with JavaScript.</p>
+      </details>
+    </section>
+
+    <section class="project">
+      <header class="project-header">
+        <h2 class="project-title">Project 3: Garden (<time datetime="2026-10-01">Oct 1</time> &ndash; <time datetime="2026-10-22">Oct 22</time>)</h2>
+      </header>
+      <p>Using what you have learned about event listeners, mouse coordinates, and dynamically creating and appending HTML elements, create a virtual garden which implements the ability to render and place elements where you click your mouse.</p>
+      <p><em>You will learn:</em> Event listeners, Event objects and mouse coordinates, Creating and placing elements, Arrays of objects and forEach</p>
+      <details>
+        <summary>Part 3 — Interaction (Weeks 6–9)</summary>
+        <p>Students are introduced to event listeners and mouse interaction through a series of small interactive demos.</p>
+      </details>
+    </section>
+
+    <section class="project">
+      <header class="project-header">
+        <h2 class="project-title">Project 4: Sender Receiver (<time datetime="2026-10-22">Oct 22</time> &ndash; <time datetime="2026-11-12">Nov 12</time>)</h2>
+      </header>
+      <p>Design and develop a website which incorporates an external data feed, using one of the APIs discussed in class. You may also use another API or service that you have researched independently, so long as it provides a live data stream to work with. Consider how your specific design logic might change the meaning of said data, and how the user may (or may not) interact with the feed as they engage with your site.</p>
+      <p><em>You will learn:</em> APIs and fetch(), Asynchronous code and JSON, Turning data into elements on the page, Saving data with localStorage</p>
+      <details>
+        <summary>Part 4 — Fetching (Weeks 9–12)</summary>
+        <p>Students are introduced to JavaScript as a method of data management. Students are given demos exploring asynchronous functions, APIs, and localStorage to gain an understanding of fetching and pushing data.</p>
+      </details>
+    </section>
+
+    <section class="project">
+      <header class="project-header">
+        <h2 class="project-title">Project 5: Library Interface Project: Globe (<time datetime="2026-11-12">Nov 12</time> &ndash; <time datetime="2026-12-10">Dec 10</time>)</h2>
+      </header>
+      <p>Using an API to fetch place-based data and the Three.js library, design and build an interactive 3D globe that catalogues a network of real places connected by a shared purpose — a resource, a service, a community, a cause. Consider how the look of your globe reflects the topic you are working with, and design an interface for how users discover and access the data behind each place.</p>
+      <p><em>You will learn:</em> Fetching and mapping geographic data, 3D coordinate math (latitude/longitude to Cartesian), Raycasting and interaction in 3D, Reading Three.js documentation</p>
+      <details>
+        <summary>Part 5 — The world of the web (Weeks 12–15)</summary>
+        <p>After gaining an understanding of how to manipulate CSS through plain JavaScript, students are introduced to JavaScript libraries through a series of small demos. Students are expected to select and become well-acquainted with the documentation of one library through an interface-based project for the remainder of the course.</p>
+      </details>
+    </section>
+
+  </section>
+
+  <section id="schedule">
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 1: What is JavaScript? (<time datetime="2026-08-27">Aug 27</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Introductions and syllabus review</li>
+        <li>HTML and CSS review</li>
+        <li>What JavaScript is and what it does in the browser</li>
+        <li>References: <a href="https://radio.garden">Radio Garden</a> by Jonathan Puckey, <a href="http://16777216.site">16777216.site</a> by Jacob Hovings, <a href="https://noahveltman.com/internet-shape/">What Shape Is the Internet?</a> by Noah Veltman</li>
+        <li>Intro Project 1 (Hello World)</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Start your homepage</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 2: Variables, Functions and Conditionals (<time datetime="2026-09-03">Sep 3</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Variables, functions and conditionals</li>
+        <li>Selecting elements and changing their CSS on click</li>
+        <li>Debugging with <code>console.log()</code> and the browser's developer tools</li>
+        <li><a href="https://github.com/severinbunse/Javascript-2026-examples/tree/main/2026-09-03-background-toggle-on-click">Demos</a>: toggling background colors and images on click</li>
+        <li>Sharing homepages in progress</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Make your homepage interactive: use at least one variable and one function to change a CSS property when an element is clicked</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 3: Loops and Arrays (<time datetime="2026-09-10">Sep 10</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Project 1 due: critique</li>
+        <li>Loops and arrays</li>
+        <li><a href="https://github.com/severinbunse/Javascript-2026-examples/tree/main/2026-09-10-conditionals-loops-and-functions">Demos</a>: loops, arrays and objects</li>
+        <li>Publishing a site with GitHub Pages</li>
+        <li>Intro Project 2 (Generative Pattern)</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Publish your homepage on GitHub and share the link</li>
+        <li>Reading: Vera Molnár / Anni Albers on design and iteration</li>
+        <li>Start Project 2 by experimenting with the <a href="https://codepen.io/editor/Severin-Bunse/pen/01a08d94-6689-7494-95da-5095bad4656a">color-cycle code</a> from class</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 4: Parameters and Timing (<time datetime="2026-09-17">Sep 17</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Function parameters</li>
+        <li>Timing with <code>setTimeout()</code></li>
+        <li><a href="https://github.com/severinbunse/Javascript-2026-examples/tree/main/2026-09-17-functions-and-timing">Demos</a>: building patterns over time and placing images from an array</li>
+        <li>Small group check-ins on Project 2</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Continue Project 2</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 5: Randomness and Filters (<time datetime="2026-09-24">Sep 24</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Changing CSS filters with JavaScript</li>
+        <li>Randomness with <code>Math.random()</code></li>
+        <li><a href="https://github.com/severinbunse/Javascript-2026-examples/tree/main/2026-09-24-random-conditionals-and-filters">Demos</a>: random colors with conditionals, filters that change over time</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Continue Project 2</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 6: Event Listeners (<time datetime="2026-10-01">Oct 1</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Project 2 due: critique</li>
+        <li>Event listeners and event types</li>
+        <li><a href="https://github.com/severinbunse/Javascript-2026-examples/tree/main/2026-10-01-event-listeners">Demos</a>: click, hover and keyboard events, rebuilding a homepage with event listeners</li>
+        <li>Intro Project 3 (Garden)</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Start building your garden, for now without mouse coordinates</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 7: Mouse Coordinates (<time datetime="2026-10-08">Oct 8</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Event objects and mouse coordinates</li>
+        <li>Demos: mapping the mouse position to color and size, drawing, measuring speed and distance</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Continue Project 3</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 8: Arrays of Objects (<time datetime="2026-10-15">Oct 15</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Arrays of objects and <code>forEach</code></li>
+        <li>Demos: NodeLists</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Continue Project 3</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 9: Fetching Data (<time datetime="2026-10-22">Oct 22</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Project 3 due: critique</li>
+        <li>APIs and <code>fetch()</code></li>
+        <li>Asynchronous code and JSON</li>
+        <li><a href="https://github.com/severinbunse/Javascript-2026-examples/tree/main/2026-10-22-fetch">Demos</a>: fetching live data on the ISS and placing it with latitude and longitude</li>
+        <li>Intro Project 4 (Sender Receiver)</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Think about what you'd like Project 4 to be about, then research keyless APIs that could help you realize it (see the <a href="APIs.html">List of APIs</a>)</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 10: Working with APIs (<time datetime="2026-10-29">Oct 29</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Turning API data into elements on the page</li>
+        <li>Handling errors when a request fails</li>
+        <li>Demo: showing live NYC traffic camera images from an API</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Continue Project 4</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 11: Saving Data (<time datetime="2026-11-05">Nov 5</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Saving data in the browser with <code>localStorage</code></li>
+        <li>Project 4 check-ins</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Finish Project 4</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 12: Three.js (<time datetime="2026-11-12">Nov 12</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Project 4 due: critique</li>
+        <li>Intro Project 5 (Library Interface Project: Globe)</li>
+        <li>Three.js basics: scene, camera, geometry and materials</li>
+        <li>Plotting points on a sphere from latitude and longitude</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Sketches for Project 5</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 13: Interaction in 3D (<time datetime="2026-11-19">Nov 19</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Raycasting: detecting clicks and hovers on 3D objects</li>
+        <li>Project 5 check-ins</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Prototype for Project 5</li>
+      </ul>
+    </section>
+
+    <p class="break"><em>No class Thursday, November 26 — Thanksgiving recess (Wed Nov 25 – Sun Nov 29).</em></p>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 14: Guest Lecture (<time datetime="2026-12-03">Dec 3</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Guest lecture by an interface designer</li>
+        <li>Individual meetings on Project 5</li>
+      </ul>
+      <h3>Homework</h3>
+      <ul>
+        <li>Finish Project 5</li>
+      </ul>
+    </section>
+
+    <section class="week">
+      <header class="week-header">
+        <h2 class="week-title">Week 15: Final Critique (<time datetime="2026-12-10">Dec 10</time>)</h2>
+      </header>
+      <h3>In-class</h3>
+      <ul>
+        <li>Project 5 due: final critique with a guest critic</li>
+        <li>Due: your final site index and a zip of your semester's code</li>
+        <li>Course assessment</li>
+      </ul>
+    </section>
+
+  </section>
+
+  <hr>
+
+  <section class="assessment">
+    <h2>Assessment criteria</h2>
+    <table class="meta-table">
+      <tr><td>10%</td><td>Attendance &amp; professionalism</td></tr>
+      <tr><td>5%</td><td>Project 1: Hello World</td></tr>
+      <tr><td>20%</td><td>Project 2: Generative Pattern</td></tr>
+      <tr><td>15%</td><td>Project 3: Garden</td></tr>
+      <tr><td>25%</td><td>Project 4: Sender Receiver</td></tr>
+      <tr><td>25%</td><td>Project 5: Library Interface Project: Globe</td></tr>
+    </table>
+  </section>
+
+  <hr>
+
+  <section class="acknowledgments">
+    <h2>Acknowledgments</h2>
+    <p>This course builds on prior PSAM 3210/3030 "CD Studio: JavaScript" syllabi developed by Lukas Eigler-Harding (Fall 2020) and Eric Li (Fall 2024).</p>
+  </section>
+
+</main>
+
+</body>
+</html>
