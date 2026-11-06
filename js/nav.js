@@ -46,7 +46,7 @@ const siteNav = `
           <li class="activity same-date"><a href="${code}2026-10-01-event-listeners/lightswitch-event-listener">Lightswitch Event Listener</a></li>
           <li class="activity"><time datetime="2026-10-08">10/8</time><a href="${code}2026-10-08-mouse-position/color-field">Color Field</a></li>
           <li class="activity same-date"><a href="${code}2026-10-08-mouse-position/shy-button">Shy Button</a></li>
-          <li class="activity same-date"><a href="${code}2026-10-08-mouse-position/following-eyes">Following Eyes</a></li>
+          <li class="activity"><time datetime="2026-10-15">10/15</time><a href="${code}2026-10-15-queryselectors-and-arrow-functions/following-eyes">Following Eyes</a></li>
         </ul>
       </details>
     </li>
