@@ -38,6 +38,13 @@ p {
   margin: 0 0 16px;
 }
 
+/* Student projects: a thin line separates them from the assignment */
+.student-projects {
+  margin-top: 24px;
+  padding-top: 8px;
+  border-top: 1px solid black;
+}
+
 h2 {
   font-size: 16px;
   margin: 1lh 0 4px;
