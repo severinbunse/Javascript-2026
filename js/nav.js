@@ -44,6 +44,9 @@ const siteNav = `
           <li class="activity same-date"><a href="${code}2026-10-01-event-listeners/random-boxes-on-click">Random Boxes on Click</a></li>
           <li class="activity same-date"><a href="${code}2026-10-01-event-listeners/event-types-overview">Event Types Overview</a></li>
           <li class="activity same-date"><a href="${code}2026-10-01-event-listeners/lightswitch-event-listener">Lightswitch Event Listener</a></li>
+          <li class="activity"><time datetime="2026-10-08">10/8</time><a href="${code}2026-10-08-mouse-position/color-field">Color Field</a></li>
+          <li class="activity same-date"><a href="${code}2026-10-08-mouse-position/shy-button">Shy Button</a></li>
+          <li class="activity same-date"><a href="${code}2026-10-08-mouse-position/following-eyes">Following Eyes</a></li>
         </ul>
       </details>
     </li>
@@ -54,6 +57,9 @@ const siteNav = `
         <ul class="activities">
           <li class="activity"><time datetime="2026-10-22">10/22</time><a href="${code}2026-10-22-fetch/iss-tracker">ISS Tracker</a></li>
           <li class="activity"><time datetime="2026-10-29">10/29</time><a href="${code}2026-10-29-apis/nyc-traffic-camera-clock">NYC Traffic Camera Clock</a></li>
+          <li class="activity"><time datetime="2026-11-05">11/5</time><a href="${code}2026-11-05-localstorage/saving-a-word">Saving a Word</a></li>
+          <li class="activity same-date"><a href="${code}2026-11-05-localstorage/list-of-words">List of Words</a></li>
+          <li class="activity same-date"><a href="${code}2026-11-05-localstorage/drawing-pad-with-localstorage">Drawing Pad with localStorage</a></li>
         </ul>
       </details>
     </li>
