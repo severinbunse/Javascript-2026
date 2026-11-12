@@ -54,8 +54,8 @@ const siteNav = `
       </details>
     </li>
 
-    <li class="project" data-status="current">
-      <details open>
+    <li class="project" data-status="done">
+      <details>
         <summary><a class="project-title" href="Project4_11.12.26.html">Project 4: Sender Receiver</a></summary>
         <ul class="activities">
           <li class="activity"><time datetime="2026-10-22">10/22</time><a href="${code}2026-10-22-fetch/iss-tracker">ISS Tracker</a></li>
@@ -63,6 +63,14 @@ const siteNav = `
           <li class="activity"><time datetime="2026-11-05">11/5</time><a href="${code}2026-11-05-localstorage/saving-a-word">Saving a Word</a></li>
           <li class="activity same-date"><a href="${code}2026-11-05-localstorage/list-of-words">List of Words</a></li>
           <li class="activity same-date"><a href="${code}2026-11-05-localstorage/drawing-pad-with-localstorage">Drawing Pad with localStorage</a></li>
+        </ul>
+      </details>
+    </li>
+
+    <li class="project" data-status="current">
+      <details open>
+        <summary><a class="project-title" href="Project5_12.10.26.html">Project 5: JS Libraries</a></summary>
+        <ul class="activities">
         </ul>
       </details>
     </li>
