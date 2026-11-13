@@ -71,6 +71,7 @@ const siteNav = `
       <details open>
         <summary><a class="project-title" href="Project5_12.10.26.html">Project 5: JS Libraries</a></summary>
         <ul class="activities">
+          <li class="activity"><time datetime="2026-11-12">11/12</time><a href="${code}2026-11-12-libraries/confetti">Confetti</a></li>
         </ul>
       </details>
     </li>
