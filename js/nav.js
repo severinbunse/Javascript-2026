@@ -73,6 +73,7 @@ const siteNav = `
         <ul class="activities">
           <li class="activity"><time datetime="2026-11-12">11/12</time><a href="${code}2026-11-12-libraries/confetti">Confetti</a></li>
           <li class="activity same-date"><a href="${code}2026-11-12-libraries/falling-box">Falling Box</a></li>
+          <li class="activity"><time datetime="2026-11-25">11/25</time><a href="${code}2026-11-25-libraries/throw-a-div">Throw a Div</a></li>
         </ul>
       </details>
     </li>
